@@ -1,0 +1,12 @@
+HTTP/1.1 200 OK
+X-Riak-Vclock: a85hYGBgzGDKBVI8+xkWvu9f5m4AEUpkzGNlWN5reosvCwA=
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Link: </buckets/s23424>; rel="up"
+Last-Modified: Wed, 09 Jun 2021 19:08:23 GMT
+ETag: "4zLynOzQnqxdvRqcTEyAdc"
+Date: Wed, 09 Jun 2021 19:09:20 GMT
+Content-Type: application/json
+Content-Length: 66
+
+{"name": "Pizza", "weight": 600, "price": 32.49, "isSweet": false}

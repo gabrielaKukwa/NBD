@@ -1,0 +1,33 @@
+1.
+curl -i -XPUT -H "Content-Type: application/json" -d '{"name": "Chocolate", "weight": 100, "price": 7.99, "isSweet": true}' http://localhost:8098/buckets/s23424/keys/chocolate
+curl -i -XPUT -H "Content-Type: application/json" -d '{"name": "Lemon", "weight": 150, "price": 2.45, "isSweet": false}' http://localhost:8098/buckets/s23424/keys/lemon
+curl -i -XPUT -H "Content-Type: application/json" -d '{"name": "Water", "weight": 500, "price": 1.89, "isSweet": false}' http://localhost:8098/buckets/s23424/keys/water
+curl -i -XPUT -H "Content-Type: application/json" -d '{"name": "Jelly", "weight": 150, "price": 4.99, "isSweet": true}' http://localhost:8098/buckets/s23424/keys/jelly
+curl -i -XPUT -H "Content-Type: application/json" -d '{"name": "Pizza", "weight": 600, "price": 32.49, "isSweet": false}' http://localhost:8098/buckets/s23424/keys/pizza
+
+2.
+curl -i -XGET  http://localhost:8098/buckets/s23424/keys/pizza
+
+3.
+curl -i -XPUT -H "Content-Type: application/json" -d '{"name": "Chocolate", "weight": 100, "price": 7.99, "isSweet": true, "flavour": "nutty"}' http://localhost:8098/buckets/s23424/keys/chocolate
+
+4.
+curl -i -XPUT -H "Content-Type: application/json" -d '{"name": "Jelly", "price": 4.99, "isSweet": true}' http://localhost:8098/buckets/s23424/keys/jelly
+
+5.
+curl -i -XPUT -H "Content-Type: application/json" -d '{"name": "Lemon", "weight": 200, "price": 2.45, "isSweet": false}' http://localhost:8098/buckets/s23424/keys/lemon
+
+6.
+curl -i -XDELETE http://localhost:8098/buckets/s23424/keys/water
+
+7.
+curl -i -XGET  http://localhost:8098/buckets/s23424/keys/cake
+
+8.
+curl -i -XPOST -H "Content-Type: application/json" -d '{"name": : "Tiramisu"}' http://localhost:8098/buckets/s23424/keys
+
+9.
+curl -i -XGET  http://localhost:8098//buckets/s23424/keys/SnxEWxcdK6VXD8htdQ7ac6BFkhV
+
+10.
+curl -i -XDELETE http://localhost:8098//buckets/s23424/keys/SnxEWxcdK6VXD8htdQ7ac6BFkhV
